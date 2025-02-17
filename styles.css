@@ -1,38 +1,318 @@
+body {
+    font-family: 'Gabarito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2edd4; /* Beige clair */
+    color: #322D2B; /* Noir brunâtre */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px; /* Ajoute un padding en haut pour éviter que le contenu soit caché derrière le header */
+
+}
+
 header {
     background-color: #322D2B; /* Noir brunâtre */
     color: #f2edd4; /* Beige clair */
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que le header reste au-dessus des autres éléments */
 }
 
 header .logo img {
-    max-height: 100px; /* Augmentez la hauteur pour rendre le logo plus visible */
-    margin-left: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    flex-grow: 1;
-    text-align: center;
+    max-height: 60px; /* Réduire la hauteur du logo */
+    margin-left: 10px; /* Réduire la marge */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin-right: 20px;
+    margin-right: 10px; /* Réduire la marge */
+    display: flex;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Réduire la marge */
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #322D2B; /* Noir brunâtre */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: #f2edd4; /* Beige clair */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #575757; /* Gris foncé */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+nav ul li .dropdown-content.show {
+    display: block;
 }
 
 nav ul li a {
     color: #f2edd4; /* Beige clair */
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Ajoutez cette règle pour la section #accueil */
+#accueil {
+    background-color: #ffffff; /* Blanc */
+    color: #322D2B; /* Noir brunâtre */
+    padding: 5px; /* Réduire le padding */
+}
+
+.hero {
+    /* text-align: center; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: auto; /* Supprime la hauteur forcée */
+    padding-top: 0; /* Supprime l'espace en haut */
+
+        
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    
+
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #eccd3e; /* Jaune doré */
+    color: #322D2B; /* Noir brunâtre */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.hero-slider {
+    flex: 1;
+    padding: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 900px;
+    /* height: 300px; Ajuster la hauteur pour montrer l'image en entier */
+    overflow: hidden;
+    height: auto; /* Permet à la hauteur de s’adapter */
+    min-height: 400px; /* Ajuste selon le besoin */
+    
+    
+}
+
+.slider img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    animation: slide 15s infinite;
+    opacity: 0;    
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slider img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.separator {
+    background-color: #322D2B; /* Noir brunâtre */
+    color: #f2edd4; /* Beige clair */
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.separator h2 {
+    margin: 0;
+    font-size: 2em;
+}
+#apropos {
+    background: url('images/apropos-bg.jpg') no-repeat center center/cover; /* Remplacez 'images/apropos-bg.jpg' par le chemin de votre image */
+    color: #f9f4f3; /* Noir brunâtre */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#apropos p {
+    max-width: 800px; /* Limite la largeur du texte */
+    margin: 0 auto; /* Centre le texte */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+#apropos .btn {
+    background-color: #eccd3e; /* Jaune doré */
+    color: #322D2B; /* Noir brunâtre */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #b04329; /* Brique rouge */
+    color: #f2edd4; /* Beige clair */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #322D2B; /* Noir brunâtre */
+    color: #f2edd4; /* Beige clair */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #b04329; /* Brique rouge */
+    color: #f2edd4; /* Beige clair */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #322D2B; /* Noir brunâtre */
+    color: #f2edd4; /* Beige clair */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
 }

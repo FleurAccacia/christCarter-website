@@ -12,39 +12,70 @@
         <div class="logo">
             <img src="images/logo.png" alt="Christ Carter Studios Logo">
         </div>
-        <!-- <h1>Christ Carter Studios</h1> -->
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#services">Services</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn" id="services-btn">Services <span class="arrow">v</span></a>
+                    <div class="dropdown-content" id="services-dropdown">
+                        <a href="strategie.html">STRATEGIE DE COMMUNICATION</a>
+                        <a href="creation.html">CREATION DE CONTENU</a>
+                        <a href="digitale.html">COMMUNICATION DIGITALE</a>
+                    </div>
+                </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="accueil" class="hero">
-        <h2>Immortalisez vos moments avec élégance</h2>
-        <a href="#contact" class="btn">Réservez une séance</a>
-    </section>
-    
-    <section id="apropos">
-        <h2>À propos de nous</h2>
-        <p>Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
-    </section>
-    
-    <section id="galerie">
-        <h2>Galerie</h2>
-        <div class="grid">
-            <img src="photo1.jpg" alt="Shooting 1">
-            <img src="photo2.jpg" alt="Shooting 2">
-            <img src="photo3.jpg" alt="Shooting 3">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Bienvenue chez Christ Carter Studios</h2>
+                <p>Immortalisez vos moments avec élégance et professionnalisme. Nous sommes là pour capturer vos souvenirs les plus précieux.</p>
+                <a href="#contact" class="btn">Réservez une séance</a>
+            </div>
+            <div class="hero-slider">
+                <div class="slider">
+                    <img src="images/photo1.jpg" alt="Shooting 1">
+                    <img src="images/photo2.jpg" alt="Shooting 2">
+                    <img src="images/photo3.jpg" alt="Shooting 3">
+                </div>
+            </div>
         </div>
     </section>
     
-    <section id="services">
+    <div class="separator">
+        <h2>À propos de nous</h2>
+    </div>
+
+    <section id="apropos">
+        <!-- <h2>À propos de nous</h2> -->
+        <p>Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
+        <a href="#contact" class="btn">En savoir plus</a>
+    </section>
+
+    <div class="separator">
+        <h2>Galerie</h2>
+    </div>
+    
+    <section id="galerie">
+        <!-- <h2>Galerie</h2> -->
+        <div class="grid">
+            <img src="images/photo1.jpg" alt="Shooting 1">
+            <img src="images/photo2.jpg" alt="Shooting 2">
+            <img src="images/photo3.jpg" alt="Shooting 3">
+        </div>
+    </section>
+    
+    <div class="separator">
         <h2>Nos Services</h2>
+    </div>
+
+    <section id="services">
+        <!-- <h2>Nos Services</h2> -->
         <ul>
             <li>Photographie de studio</li>
             <li>Événements et mariages</li>
@@ -52,6 +83,10 @@
             <li>Création de contenu digital</li>
         </ul>
     </section>
+
+    <div class="separator">
+        <h2>Contactez-nous</h2>
+    </div>
     
     <section id="contact">
         <h2>Contact & Réservation</h2>
