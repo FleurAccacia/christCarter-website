@@ -6,6 +6,8 @@
     <title>Christ Carter Studios</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -62,11 +64,19 @@
     </div>
     
     <section id="galerie">
-        <!-- <h2>Galerie</h2> -->
         <div class="grid">
-            <img src="images/photo1.jpg" alt="Shooting 1">
-            <img src="images/photo2.jpg" alt="Shooting 2">
-            <img src="images/photo3.jpg" alt="Shooting 3">
+            <a href="images/CCS1.jpg" data-lightbox="gallery"><img src="images/CCS1.jpg" alt="Shooting 1"></a>
+            <a href="images/CCS2.jpg" data-lightbox="gallery"><img src="images/CCS2.jpg" alt="Shooting 2"></a>
+            <a href="images/CCS3.jpg" data-lightbox="gallery"><img src="images/CCS3.jpg" alt="Shooting 3"></a>
+            <a href="images/CCS4.jpg" data-lightbox="gallery"><img src="images/CCS4.jpg" alt="Shooting 4"></a>
+            <a href="images/CCS5.jpg" data-lightbox="gallery"><img src="images/CCS5.jpg" alt="Shooting 5"></a>
+            <a href="images/CCS6.jpg" data-lightbox="gallery"><img src="images/CCS6.jpg" alt="Shooting 6"></a>
+            <a href="images/CCS7.jpg" data-lightbox="gallery"><img src="images/CCS7.jpg" alt="Shooting 7"></a>
+            <a href="images/CCS8.jpg" data-lightbox="gallery"><img src="images/CCS8.jpg" alt="Shooting 8"></a>
+            <a href="images/CCS9.jpg" data-lightbox="gallery"><img src="images/CCS9.jpg" alt="Shooting 9"></a>
+            <a href="images/CCS10.jpg" data-lightbox="gallery"><img src="images/CCS10.jpg" alt="Shooting 10"></a>
+            <a href="images/CCS11.jpg" data-lightbox="gallery"><img src="images/CCS11.jpg" alt="Shooting 11"></a>
+            <a href="images/CCS12.jpg" data-lightbox="gallery"><img src="images/CCS12.jpg" alt="Shooting 12"></a>
         </div>
     </section>
     
@@ -75,13 +85,21 @@
     </div>
 
     <section id="services">
-        <!-- <h2>Nos Services</h2> -->
-        <ul>
-            <li>Photographie de studio</li>
-            <li>Événements et mariages</li>
-            <li>Portraits professionnels</li>
-            <li>Création de contenu digital</li>
-        </ul>
+        <div class="service">
+            <h3>STRATEGIE DE COMMUNICATION</h3>
+            <p>Nous vous aidons à élaborer des stratégies de communication efficaces pour atteindre vos objectifs.</p>
+            <a href="strategie.html" class="btn">En savoir plus</a>
+        </div>
+        <div class="service">
+            <h3>CREATION DE CONTENU</h3>
+            <p>Notre équipe crée du contenu visuel et digital de haute qualité pour vos besoins marketing.</p>
+            <a href="creation.html" class="btn">En savoir plus</a>
+        </div>
+        <div class="service">
+            <h3>COMMUNICATION DIGITALE</h3>
+            <p>Nous optimisons votre présence en ligne grâce à des techniques de communication digitale avancées.</p>
+            <a href="digitale.html" class="btn">En savoir plus</a>
+        </div>
     </section>
 
     <div class="separator">
@@ -89,17 +107,38 @@
     </div>
     
     <section id="contact">
-        <h2>Contact & Réservation</h2>
-        <form>
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="images/logo.png" alt="Christ Carter Studios Logo" class="contact-logo">
+                <p>Email : <a href="mailto:christcarterstudios@gmail.com">christcarterstudios@gmail.com</a></p>
+                <p>Téléphone :</p>
+                <p>+228 92671228</p>
+                <p>+225 0711469754</p>
+            </div>
+            <div class="contact-social">
+                <p>Suivez-nous :</p>
+                <p><a href="https://www.instagram.com/christcarter_studios" target="_blank">Instagram : christcarter_studios</a></p>
+                <p><a href="https://www.facebook.com/ChristCarter" target="_blank">Facebook : Christ Carter</a></p>
+            </div>
+            <div class="contact-form">
+                <h2>Contact & Réservation</h2>
+                <form>
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Votre message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
     </section>
     
     <footer>
         <p>&copy; 2024 Christ Carter Studios - Tous droits réservés.</p>
     </footer>
+  
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
