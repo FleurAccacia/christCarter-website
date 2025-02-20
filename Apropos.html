@@ -16,7 +16,14 @@
         <nav>
             <ul>
                 <li><a href="index.html#accueil">Accueil</a></li>
-                <li><a href="Apropos.html">À propos</a></li>
+                <li class="dropdown">
+                    <a href="Apropos.html" class="dropbtn" id="apropos-btn">À propos <span class="arrow">v</span></a>
+                    <div class="dropdown-content" id="apropos-dropdown">
+                        <a href="Apropos.html#histoire">Notre Histoire</a>
+                        <a href="Apropos.html#engagement">Notre Engagement</a>
+                        <a href="Apropos.html#team">Notre Équipe</a>
+                    </div>
+                </li>
                 <li><a href="index.html#galerie">Galerie</a></li>
                 <li class="dropdown">
                     <a href="index.html#services" class="dropbtn" id="services-btn">Services <span class="arrow">v</span></a>
@@ -47,8 +54,21 @@
             <h2>Notre Histoire</h2>
         </div>
         <div class="histoire-content">
-            <p>Christ Carter Studios a été fondé en 2010 avec la vision de capturer les moments les plus précieux de la vie. Depuis nos débuts, nous avons travaillé avec des centaines de clients pour créer des souvenirs inoubliables. Notre passion pour la photographie et la production audiovisuelle nous a permis de nous démarquer dans le domaine de la communication visuelle.</p>
-            <p>Au fil des années, nous avons élargi notre gamme de services pour inclure la création de contenu digital, la stratégie de communication et bien plus encore. Notre engagement envers l'excellence et notre dévouement à nos clients sont les piliers de notre succès.</p>
+            <div class="histoire-part">
+                <img src="images/creator.jpg" alt="Créateur de Christ Carter Studios" class="histoire-img">
+                <div class="histoire-text">
+                    <p>Christ Carter Studios a été fondé en 2010 avec la vision de capturer les moments les plus précieux de la vie. Depuis nos débuts, nous avons travaillé avec des centaines de clients pour créer des souvenirs inoubliables. Notre passion pour la photographie et la production audiovisuelle nous a permis de nous démarquer dans le domaine de la communication visuelle.</p>
+                </div>
+            </div>
+            <div class="histoire-part">
+                <div class="histoire-text">
+                    <p>Au fil des années, nous avons élargi notre gamme de services pour inclure la création de contenu digital, la stratégie de communication et bien plus encore. Notre engagement envers l'excellence et notre dévouement à nos clients sont les piliers de notre succès.</p>
+                </div>
+                <video controls class="histoire-video">
+                    <source src="videos/creation.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
         </div>
     </section>
 
@@ -61,7 +81,6 @@
             <p>Nous sommes fiers de notre réputation et nous nous efforçons de maintenir les normes les plus élevées dans tout ce que nous faisons. Que vous ayez besoin de photographie, de production vidéo ou de stratégie de communication, vous pouvez compter sur nous pour dépasser vos attentes.</p>
         </div>
     </section>
-
 
     <section id="team">
         <div class="separator">
