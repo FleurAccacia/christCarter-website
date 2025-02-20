@@ -44,6 +44,12 @@ nav ul li {
     margin: 0 10px; /* Réduire la marge */
 }
 
+nav ul li a {
+    color: #f2edd4; /* Beige clair */
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
