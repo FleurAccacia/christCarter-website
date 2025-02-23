@@ -135,6 +135,75 @@ nav ul li .dropdown-content.show {
     line-height: 1.6;
 }
 
+.histoire-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.histoire-img {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+.histoire-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.histoire-video {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+
+.engagement-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.engagement-blocs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.engagement-bloc {
+    position: relative;
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+}
+
+.engagement-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.engagement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.engagement-bloc:hover .engagement-overlay {
+    opacity: 1;
+}
+
 .separator {
     background-color: #322D2B; /* Noir brunâtre */
     color: #f2edd4; /* Beige clair */
