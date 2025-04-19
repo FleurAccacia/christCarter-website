@@ -89,7 +89,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
+/* Style pour l'élément actif */
+nav ul li .dropdown-content a.active {
+    background-color: #eccd3e; /* Jaune doré */
+    color: #322D2B; /* Noir brunâtre */
+    font-weight: bold;
+    border-radius: 5px;
+}
 /* Ajoutez cette règle pour la section #accueil */
 #accueil {
     background-color: #ffffff; /* Blanc */
@@ -98,31 +104,30 @@ nav ul li a {
 }
 
 .hero {
-    /* text-align: center; */
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    min-height: auto; /* Supprime la hauteur forcée */
-    padding-top: 0; /* Supprime l'espace en haut */
-
-        
+    min-height: auto; 
+    padding-top: 0; 
+       
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    /* width: 100%;
+    max-width: 1200px; */
+    gap: 10px; 
     
-
 }
+
 
 .hero-text {
     flex: 1;
-    padding: 20px;
+    padding: 5px;
     text-align: left;
 }
 
@@ -149,6 +154,7 @@ nav ul li a {
 .hero-slider {
     flex: 1;
     padding: 20px;
+    
 }
 
 
@@ -198,7 +204,7 @@ section {
 
 .separator {
     background-color: #322D2B; /* Noir brunâtre */
-    color: #f2edd4; /* Beige clair */
+    color: #f2edd4; 
     text-align: center;
     padding: 20px 0;
     margin: 0;
@@ -218,8 +224,8 @@ section {
 }
 
 #apropos {
-    background: url('images/apropos-bg.jpg') no-repeat center center/cover; /* Remplacez 'images/apropos-bg.jpg' par le chemin de votre image */
-    color: #f9f4f3; /* Noir brunâtre */
+    background: url('../images/apropos-bg.jpg') no-repeat center center/cover; /* Remplacez 'images/apropos-bg.jpg' par le chemin de votre image */
+    color: #f9f4f3; 
     padding: 80px 60px;
     text-align: center;
 }
@@ -255,7 +261,7 @@ section {
 
 .grid a {
     display: block;
-    width: calc(25% - 20px); /* Ajuste la largeur des images miniatures */
+    width: calc(25% - 20px); 
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
@@ -264,7 +270,7 @@ section {
 .grid img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; /* Ajuste l'image pour couvrir l'espace */
+    object-fit: cover; 
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
