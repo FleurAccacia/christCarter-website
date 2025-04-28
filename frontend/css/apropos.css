@@ -59,7 +59,7 @@ nav ul li .dropdown-content {
 }
 
 nav ul li .dropdown-content a {
-    color: #f2edd4; /* Beige clair */
+    color: #f2edd4; 
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -152,9 +152,25 @@ nav ul li .dropdown-content.show {
     text-align: left;
 }
 
+
 .histoire-video {
-    max-width: 45%;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+}
+
+.histoire-video.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 1000;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #000;
 }
 
 
@@ -251,6 +267,14 @@ nav ul li .dropdown-content.show {
 .team-member p {
     font-size: 1em;
     color: #666;
+}
+/* Réduction de la taille de la première image de l'équipe */
+.team-content .team-member:first-child img {
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 0 auto; 
+    display: block; 
 }
 
 footer {

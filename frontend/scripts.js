@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(service);
     });
 
-    // // Gestion du menu mobile
+    // Gestion de la vidéo en plein écran
+    const video = document.querySelector(".histoire-video");
+
+    video.addEventListener("click", () => {
+        video.classList.toggle("fullscreen");
+    });
+
+    // // Gestion du menu mobile (désactivé pour l'instant)
     // const menuToggle = document.querySelector('.menu-toggle');
     // const navMenu = document.querySelector('header nav ul');
 

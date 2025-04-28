@@ -297,6 +297,16 @@ section {
     opacity: 1;
 }
 
+/* Personnalisation de la Lightbox */
+.lightboxOverlay {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.lightbox .lb-data {
+    color: #fff !important;
+    font-family: 'Gabarito', sans-serif;
+}
+
 #services {
     display: flex;
     justify-content: space-around;
