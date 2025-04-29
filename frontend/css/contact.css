@@ -1,0 +1,54 @@
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #b04329; /* Brique rouge */
+    color: #f2edd4; /* Beige clair */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #b04329; /* Brique rouge */
+    color: #f2edd4; /* Beige clair */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

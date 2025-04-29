@@ -41,7 +41,7 @@
 
 .content.strategie-content h2 {
     font-size: 2rem;
-    color: #222;
+    color: #b04329;
     margin-bottom: 20px;
 }
 
@@ -55,7 +55,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #ecb53e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@
 }
 
 .content.strategie-content .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #b04329;
 }
 
 /* Footer */
@@ -85,3 +85,53 @@ footer {
         max-width: 100%;
     }
 }
+
+.dynamic-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.services-list {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 0;
+    list-style: none; 
+    margin: 20px 0;
+}
+
+.service-item {
+    flex: 1 1 calc(30% - 20px); 
+    background-color: #f4ebe2; 
+    color: #322D2B; 
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.service-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* h2.dynamic-text {
+    color: #ffcc33; 
+} */

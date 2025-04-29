@@ -7,14 +7,16 @@
    
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
-<body>
+<body id="home-page">
     <header>
         <div class="logo">
-            <!-- Correction du chemin vers le logo -->
+           
             <img src="../images/logo.png" alt="Christ Carter Studios Logo">
         </div>
         <!-- <div class="menu-toggle">☰</div> -->
@@ -31,7 +33,7 @@
                         <a href="digitale.html">COMMUNICATION DIGITALE</a>
                     </div>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -41,25 +43,19 @@
             <div class="hero-text">
                 <h2>Bienvenue chez Christ Carter Studios</h2>
                 <p>Immortalisez vos moments avec élégance et professionnalisme. Nous sommes là pour capturer vos souvenirs les plus précieux.</p>
-                <a href="#contact" class="btn">Réservez une séance</a>
-            </div>
-            <div class="hero-slider">
-                <div class="slider">
-                    <img src="../images/photo1.jpg" alt="Shooting 1">
-                    <img src="../images/photo2.jpg" alt="Shooting 2">
-                    <img src="../images/photo3.jpg" alt="Shooting 3">
-                </div>
+                <a href="contact.html" class="btn">Réservez une séance</a>
             </div>
         </div>
     </section>
+
     
     <div class="separator visible">
         <h2>À propos de nous</h2>
     </div>
 
-    <section id="apropos">
-        <p>Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
-        <a href="Apropos.html" class="btn">En savoir plus</a>
+    <section id="apropos" class="hidden">
+        <p class="zoom-text hidden">Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
+        <a href="Apropos.html" class="btn zoom-btn hidden">En savoir plus</a>
     </section>
 
     <div class="separator visible">
@@ -105,14 +101,11 @@
         </div>
     </section>
 
-    <div class="separator visible">
-        <h2>Contactez-nous</h2>
-    </div>
     
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="contact-container">
             <div class="contact-info">
-                <!-- Correction du chemin vers le logo -->
+                
                 <img src="../images/logo.png" alt="Christ Carter Studios Logo" class="contact-logo">
                 <p>Email : <a href="mailto:christcarterstudios@gmail.com">christcarterstudios@gmail.com</a></p>
                 <p>Téléphone :</p>
@@ -134,10 +127,32 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <footer>
-        <p>&copy; 2024 Christ Carter Studios - Tous droits réservés.</p>
+        <div class="footer-logo">
+            <img src="../images/logo.png" alt="Christ Carter Studios Logo">
+        </div>
+        <div class="footer-contact-info">
+            <p><i class="fas fa-envelope"></i> Email : <a href="mailto:christcarterstudios@gmail.com">christcarterstudios@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> Téléphone : +228 92671228 / +225 0711469754</p>
+            <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/christcarter_studios" target="_blank">Instagram : christcarter_studios</a></p>
+            <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/ChristCarter" target="_blank">Facebook : Christ Carter</a></p>
+        </div>
+        <div class="footer-quick-links">
+            <h3>Accès rapides</h3>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="Apropos.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li><a href="index.html#galerie"><i class="fas fa-images"></i> Galerie</a></li>
+                <li><a href="index.html#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="strategie.html"><i class="fas fa-lightbulb"></i> Stratégie de communication </a></li>
+                <li><a href="creation.html"><i class="fas fa-pencil-alt"></i> Création de contenu</a></li>
+                <li><a href="digitale.html"><i class="fas fa-globe"></i> Communication digitale</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2024 Christ Carter Studios - Tous droits réservés.</p>
     </footer>
   
 
