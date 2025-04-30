@@ -12,6 +12,14 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+     <!-- AOS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
 </head>
 <body id="home-page">
     <header>
@@ -38,7 +46,7 @@
         </nav>
     </header>
     
-    <section id="accueil" class="hero">
+    <section id="accueil" class="hero" data-aos="fade-up">
         <div class="hero-content">
             <div class="hero-text">
                 <h2>Bienvenue chez Christ Carter Studios</h2>
@@ -49,20 +57,20 @@
     </section>
 
     
-    <div class="separator visible">
+    <div class="separator visible" data-aos="fade-up">
         <h2>À propos de nous</h2>
     </div>
 
-    <section id="apropos" class="hidden">
+    <section id="apropos" class="hidden" data-aos="fade-right">
         <p class="zoom-text hidden">Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
         <a href="Apropos.html" class="btn zoom-btn hidden">En savoir plus</a>
     </section>
 
-    <div class="separator visible">
+    <div class="separator visible" data-aos="fade-up">
         <h2>Galerie</h2>
     </div>
     
-<section id="galerie">
+<section id="galerie" data-aos="fade-up">
     <div class="grid">
         <a href="../images/CCS1.jpg" data-lightbox="gallery" data-title="Shooting 1"><img src="../images/CCS1.jpg" alt="Shooting 1"></a>
         <a href="../images/CCS2.jpg" data-lightbox="gallery" data-title="Shooting 2"><img src="../images/CCS2.jpg" alt="Shooting 2"></a>
@@ -79,25 +87,25 @@
     </div>
 </section>
     
-    <div class="separator visible">
+    <div class="separator visible" data-aos="fade-up">
         <h2>Nos Services</h2>
     </div>
 
-    <section id="services">
-        <div class="service visible">
+    <section id="services" data-aos="fade-left">
+        <div class="service visible" data-aos="fade-up">
             <h3>STRATEGIE DE COMMUNICATION</h3>
             <p>Nous vous aidons à élaborer des stratégies de communication efficaces pour atteindre vos objectifs.</p>
-            <a href="strategie.html" class="btn">En savoir plus</a>
+            <a href="strategie.html" class="btn" data-aos="zoom-in">En savoir plus</a>
         </div>
-        <div class="service visible">
+        <div class="service visible" data-aos="fade-up" data-aos-delay="100">
             <h3>CREATION DE CONTENU</h3>
             <p>Notre équipe crée du contenu visuel et digital de haute qualité pour vos besoins marketing.</p>
-            <a href="creation.html" class="btn">En savoir plus</a>
+            <a href="creation.html" class="btn"data-aos="zoom-in">En savoir plus</a>
         </div>
-        <div class="service visible">
+        <div class="service visible" data-aos="fade-up" data-aos-delay="200">
             <h3>COMMUNICATION DIGITALE</h3>
             <p>Nous optimisons votre présence en ligne grâce à des techniques de communication digitale avancées.</p>
-            <a href="digitale.html" class="btn">En savoir plus</a>
+            <a href="digitale.html" class="btn"data-aos="zoom-in">En savoir plus</a>
         </div>
     </section>
 
@@ -156,6 +164,7 @@
     </footer>
   
 
-    <script src="../scripts.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 </html>

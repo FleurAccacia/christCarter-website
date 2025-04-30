@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Christ Carter Studios</title>
-    <!-- Correction des chemins vers les fichiers CSS -->
+    
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/apropos.css">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body id="apropos-page">
     <header>
         <div class="logo">
-            <!-- Correction du chemin vers le logo -->
+            
             <img src="../images/logo.png" alt="Christ Carter Studios Logo">
         </div>
         <nav>
@@ -37,28 +45,28 @@
                     </div>
                 </li>
                 
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="apropos" class="hero">
+    <section id="apropos" class="hero" data-aos="fade-up">
         <div class="hero-content">
             <div class="hero-text">
                 <h2>À propos de Christ Carter Studios</h2>
                 <p>Christ Carter Studios est une agence spécialisée en communication visuelle, shooting photo et production audiovisuelle. Nous aidons nos clients à donner vie à leurs idées grâce à notre expertise en photographie et en création de contenu digital.</p>
                 <p>Notre équipe de professionnels passionnés travaille avec vous pour capturer vos moments les plus précieux et créer des visuels qui racontent votre histoire. Que ce soit pour des événements, des portraits, ou des projets commerciaux, nous sommes là pour vous offrir des services de qualité supérieure.</p>
-                <a href="index.html#contact" class="btn">Contactez-nous</a>
+                <a href="contact.html" class="btn">Contactez-nous</a>
             </div>
         </div>
     </section>
 
-    <section id="histoire">
+    <section id="histoire" data-aos="fade-right">
         <div class="separator visible">
             <h2>Notre Histoire</h2>
         </div>
         <div class="histoire-content">
-            <div class="histoire-part">
+            <div class="histoire-part" data-aos="fade-up">
                 
                 <img src="../images/creator.jpg" alt="Créateur de Christ Carter Studios" class="histoire-img">
                 <div class="histoire-text">
@@ -78,44 +86,43 @@
         </div>
     </section>
 
-    <section id="engagement">
-        <div class="separator visible">
+    <section id="engagement" data-aos="fade-left">
+        <div class="separator visible" data-aos="fade-up">
             <h2>Notre Engagement</h2>
         </div>
-        <div class="engagement-content">
-            <p>Chez Christ Carter Studios, nous nous engageons à fournir des services de la plus haute qualité. Nous croyons en l'importance de la créativité, de l'innovation et de la satisfaction client. Notre équipe de professionnels talentueux travaille sans relâche pour s'assurer que chaque projet est réalisé avec soin et précision.</p>
-            <p>Nous sommes fiers de notre réputation et nous nous efforçons de maintenir les normes les plus élevées dans tout ce que nous faisons. Que vous ayez besoin de photographie, de production vidéo ou de stratégie de communication, vous pouvez compter sur nous pour dépasser vos attentes.</p>
+        <div class="engagement-content" data-aos="fade-up">
+            <p>Chez Christ Carter Studios, nous nous engageons à fournir des services de la plus haute qualité...</p>
+            <p>Nous sommes fiers de notre réputation et nous nous efforçons de maintenir les normes les plus élevées...</p>
             <div class="engagement-blocs">
-                
-                <div class="engagement-bloc">
+                <div class="engagement-bloc" data-aos="zoom-in">
                     <img src="../images/engagement1.jpg" alt="Engagement 1" class="engagement-img">
                     <div class="engagement-overlay">
                         <p>Stratégie de communication</p>
                     </div>
                 </div>
-                <div class="engagement-bloc">
+                <div class="engagement-bloc" data-aos="zoom-in" data-aos-delay="100">
                     <img src="../images/engagement2.jpg" alt="Engagement 2" class="engagement-img">
                     <div class="engagement-overlay">
-                        <p>Photographie </p>
+                        <p>Photographie</p>
                     </div>
                 </div>
-                <div class="engagement-bloc">
+                <div class="engagement-bloc" data-aos="zoom-in" data-aos-delay="200">
                     <img src="../images/engagement3.jpg" alt="Engagement 3" class="engagement-img">
                     <div class="engagement-overlay">
-                        <p>Politique </p>
+                        <p>Politique</p>
                     </div>
                 </div>
-                <div class="engagement-bloc">
+                <div class="engagement-bloc" data-aos="zoom-in" data-aos-delay="300">
                     <img src="../images/engagement4.jpg" alt="Engagement 4" class="engagement-img">
                     <div class="engagement-overlay">
-                        <p>production vidéo </p>
+                        <p>Production vidéo</p>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="team">
+    <section id="team" data-aos="fade-up">
         <div class="separator visible">
             <h2>Notre Équipe</h2>
         </div>
@@ -142,6 +149,7 @@
         <p>&copy; 2024 Christ Carter Studios - Tous droits réservés.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="../scripts/scripts.js"></script>
+   
 </body>
 </html>

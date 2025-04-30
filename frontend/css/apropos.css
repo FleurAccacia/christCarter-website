@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Gabarito', sans-serif;
     margin: 0;
@@ -125,7 +128,7 @@ nav ul li .dropdown-content.show {
 #histoire, #engagement {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f4f3; /* Couleur de fond personnalisée */
+    background-color: #f9f4f3; 
 }
 
 .histoire-content, .engagement-content {
@@ -220,22 +223,30 @@ nav ul li .dropdown-content.show {
     opacity: 1;
 }
 
+/* Style général des séparateurs */
 .separator {
-    background-color: #322D2B; /* Noir brunâtre */
-    color: #f2edd4; /* Beige clair */
+    background-color: #322D2B; 
+    color: #f2edd4; 
     text-align: center;
     padding: 20px 0;
-    margin: 0;
+    margin: 40px 0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Style du texte dans les séparateurs */
 .separator h2 {
     margin: 0;
     font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px; /* Espacement des lettres pour un effet plus élégant */
+    text-transform: uppercase; /* Met le texte en majuscules */
 }
 
 #team {
     padding: 60px 20px;
     text-align: center;
+    background-color: #f9f4f3 ;
 }
 
 .team-content {
